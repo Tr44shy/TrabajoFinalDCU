@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="col-md-4">
+
+        <div class="card">
+            <div class="card-header">
+                Registro
+            </div>
+            <div class="card-body">
+               <form action="/Admin/Registro/Guardar" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="txtnamelibro" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" name="txtnameuser" id="txtnameuser" aria-describedby="helpId" placeholder="Escriba el nombre del libro">
+                </div>
+                <div class="mb-3">
+                    <label for="imglibro" class="form-label">Imagen:</label>
+                    <input type="file" class="form-control" name="imguser" id="imguser" aria-describedby="helpId" placeholder="Seleccione la Imagen">
+                  </div>
+                  <div class="mb-3">
+                    <label for="txtUrl" class="form-label">Id:</label>
+                    <input type="text" class="form-control" name="iduser" id="iduser" aria-describedby="helpId" placeholder="Escriba la URL de descarga">
+                  </div>
+                  <div class="mb-3">
+                    <label for="txtUrl" class="form-label">Correo:</label>
+                    <input type="text" class="form-control" name="correouser" id="correouser" aria-describedby="helpId" placeholder="Escriba la URL de descarga">
+                  </div>
+                  <div class="mb-3">
+                    <label for="txtUrl" class="form-label">Contrasena:</label>
+                    <input type="text" class="form-control" name="passuser" id="passuser" aria-describedby="helpId" placeholder="Escriba la URL de descarga">
+                  </div>
+                  <div class="mb-3">
+                    <label for="txtUrl" class="form-label">Telefono:</label>
+                    <input type="text" class="form-control" name="teluser" id="teluser" aria-describedby="helpId" placeholder="Escriba la URL de descarga">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrarse</button>
+               </form>
+            </div>
+        </div>
+
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

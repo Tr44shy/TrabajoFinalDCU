@@ -1,0 +1,61 @@
+{% include'Admin/Cabecera.html'%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card">
+                <div class="card-header">
+                    Datos del libro
+                </div>
+                <div class="card-body">
+                   <form action="/Admin/Libros/Guardar" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                      <label for="txtnamelibro" class="form-label">Nombre:</label>
+                      <input type="text" class="form-control" name="txtnamelibro" id="txtnamelibro" aria-describedby="helpId" placeholder="Escriba el nombre del libro">
+                    </div>
+                    <div class="mb-3">
+                        <label for="imglibro" class="form-label">Imagen:</label>
+                        <input type="file" class="form-control" name="imglibro" id="imglibro" aria-describedby="helpId" placeholder="Seleccione la Imagen">
+                      </div>
+                      <div class="mb-3">
+                        <label for="txtUrl" class="form-label">Imagen:</label>
+                        <input type="text" class="form-control" name="txtUrl" id="txtUrl" aria-describedby="helpId" placeholder="Escriba la URL de descarga">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Button</button>
+                   </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-7">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>URL</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for libro in Libros%}
+                    <tr>
+                        <td scope="row">{{libro[0]}}</td>
+                        <td>{{libro[1]}}</td>
+                        <td>{{libro[2]}}</td>
+                        <td>{{libro[3]}}</td>
+                        <td>Eliminar</td>
+                    </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+            
+
+        </div>
+    </div>
+</div>
+
+
+{% include'Admin/Pie.html'%}
